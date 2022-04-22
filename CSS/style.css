@@ -692,6 +692,16 @@ aside{
     animation: slide-in-blurred-top .6s cubic-bezier(.23,1.000,.32,1.000) both;
 }
 
+footer{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #0D142E;
+    height: 40px;
+    padding-bottom: 10px;
+    color: white;
+}
+
 
 @media (min-width: 360px) and (max-width: 430px){
     aside {
@@ -703,11 +713,21 @@ aside{
         display: flex;
     }
     nav{
-        width: 200px;
+        width: 260px;
         background-color: #0975D9;
         height: 100vh;
         display: none;
 
+    }
+    .sobre-area-text {
+        width: 300px;
+    }
+    .sobre-texto{
+        width: 280px;
+    }
+    
+    .containerh, .container{
+        max-width: 420px;
     }
     .res-menu{
         list-style: none;
@@ -792,7 +812,7 @@ aside{
     }
 
     .sobre-texto p{
-        width: 340px;
+        width: 300px;
         text-align: center;
     }
     .botao a{
@@ -809,9 +829,12 @@ aside{
     .section-espec-area{
         flex-direction: column;
     }
+    .section-espec-text{
+        width: 340px;
+    }
 
     .section-espec-text p{
-        width: 340px;
+        width: 306px;
         margin: auto;
         padding-left: 60px;
     }
@@ -880,12 +903,21 @@ aside{
         display: flex;
     }
     nav{
-        width: 200px;
+        width: 260px;
         background-color: #0975D9;
         height: 100vh;
         display: none;
 
     }
+    .containerh, .container{
+        max-width: 350px;
+    }
+    .sobre-area-text {
+        display: flex;
+        flex-direction: column;
+        /* width: 346px; */
+    }
+    
     
     .passFunc{
         animation: none;
