@@ -222,14 +222,13 @@ aside{
     margin-top: 80px;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 .sobre-area-foto{
     display: flex;
     flex-direction: column;
     margin-left: 100px;
     margin-right: 150px;
-   
 }
 
 .foto-perfil img{
@@ -250,16 +249,14 @@ aside{
     }
 
     100%{
-        box-shadow: rgb(66, 125, 192) -15px -10px 10px 16px;
+        box-shadow: rgb(234 115 6) -15px -10px 10px 16px;
     }
 }
 
 .redes-sociais{
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
-    padding: 0px;
-    border-top: 5px solid #ee892b ;
+    margin: auto;
+    
+    
 }
 @keyframes slide-in-blurred-top{0%{transform:translateY(-1000px) scaleY(2.5) scaleX(.2);transform-origin:50% 0;filter:blur(40px);opacity:0}100%{transform:translateY(0) scaleY(1) scaleX(1);transform-origin:50% 50%;filter:blur(0);opacity:1}}
 
@@ -267,12 +264,8 @@ aside{
 
 .redes-sociais img{
     margin-top: 20px;
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    background-color: white;
+    padding: 10px 10px;
 }
-
 
 
 .sobre-area-text{
@@ -356,133 +349,69 @@ aside{
     margin-top: 120px;
 }
 
-
-.area-box-a{
-    display: flex;
-    
-}
-
-.area-box-a .box{
-    position: relative;
-    top: 50%;
-    background: rgb(0, 0, 0, 0.6);
-    border-radius: 5px;
-    padding: 15px;
-    margin-left: 10px;
-}
-
-.box-cirucle svg{
-    width: 150px;
-    height: 150px;
-}
-.box h1{
-    font-size: 15px;
-    color: white;
-    position: relative;
-    top: -8px;
-}
-
-circle{
-    width: 150px;
-    height: 150px;
-    fill: none;
-    stroke: black;
-    stroke-width: 10;
-    transform: translate(5px, 5px);
-    stroke-dasharray: 440;
-    stroke-dashoffset: 70;
-}
-
-circle:nth-child(1){
-    stroke-dashoffset:0 ;
-    stroke: rgba(189, 179, 179, 0.582);
-    
-}
-
-.cir-2{
-    animation:circuloC 4s infinite ease  alternate;
-    stroke: dodgerblue;
-}
-
-.cir-1{
-    stroke:rgb(233, 37, 37);
-    animation:circuloH 4s infinite ease  alternate;
-}
-
-.cir-3{
-    stroke:rgb(245, 230, 24);
-    animation:circuloJ 4s infinite ease  alternate;
-}
-@keyframes circuloC{
-    0%{stroke-dashoffset:0;
-        
-    }
-    
-    100%{stroke-dashoffset: 93 ;
-        
-    }
-}
-@keyframes circuloJ{
-    0%{stroke-dashoffset:0;
-        
-    }
-    
-    100%{stroke-dashoffset: 141 ;
-        
-    }
-}
-
-
-@keyframes circuloH{
-    0%{stroke-dashoffset:0;
-        
-    }
-    
-    100%{stroke-dashoffset: 66 ;
-        
-    }
-}
-.number{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-
-
 .section-espec-text{
-    display: flex;
     width: 450px;
     margin-right: 50px;
     color: white;
     font-weight: 300;
 }
 
-.section-espec-text-a{
-    margin-right: 80px;
+.section-espec-grafic{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
 }
 
-.section-espec-text-a h3, .section-espec-text-b h3{
-    position: relative;
-    top: -30px;
-    font-size: 20px;
-    color: #cc6d13;
-    border-bottom: 2px solid #024866;
+.grafic{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.barra  {
+    background-color: #EA7306;
+    margin-top: 8px;
+    width: 300px;
+    height: 5px;
+    margin-left: 60px;
+    margin-right: 20px;
+
 }
 
-.section-espec-text-a ul,
-.section-espec-text-b ul{
-    margin-left: 30px;
+
+
+.grafic-text{
+    width: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    
 }
 
+#html{
+    width: 260px;
+    margin-left: 100px;
+}
 
+#css{
+    width: 240px;
+    margin-left: 120px;
+}
 
+#js{
+    width: 180px;
+    margin-left: 180px;
+}
+
+#mysql{
+    width: 140px;
+    margin-left: 220px;
+}
+
+#python{
+    width: 100px;
+    margin-left: 260px;
+}
 
 .section-contato{
     height: 100vh;
@@ -766,7 +695,7 @@ circle:nth-child(1){
 footer{
     font-size: 20px;
     text-align: center;
-    width: 100%;
+    width: 100vw;
     background-color: #0D142E;
     height: 40px;
     padding-bottom: 10px;
@@ -784,21 +713,11 @@ footer{
         display: flex;
     }
     nav{
-        width: 260px;
+        width: 200px;
         background-color: #0975D9;
         height: 100vh;
         display: none;
 
-    }
-    .sobre-area-text {
-        width: 300px;
-    }
-    .sobre-texto{
-        width: 280px;
-    }
-    
-    .containerh, .container{
-        max-width: 420px;
     }
     .res-menu{
         list-style: none;
@@ -883,7 +802,7 @@ footer{
     }
 
     .sobre-texto p{
-        width: 300px;
+        width: 340px;
         text-align: center;
     }
     .botao a{
@@ -891,7 +810,7 @@ footer{
     }
 
     .section-espec{
-       height: 1280px;
+        height: 800px;
     }
     .espec{
         display: flex;
@@ -900,25 +819,16 @@ footer{
     .section-espec-area{
         flex-direction: column;
     }
-    .area-box-a{
-        flex-direction: column;
-        margin-top: 25px;
-    }
-    .box{
-        margin-top: 20px;
-    }
 
-    .section-espec-text{
+    .section-espec-text p{
+        width: 340px;
+        margin: auto;
+        padding-left: 60px;
+    }
+    .section-espec-grafic{
         width: 300px;
-        margin-right: 0px;
+        margin-top: 50px;
     }
-    .section-espec-text-b{
-        position: relative;
-        left: -25px;
-    }
-
-  
-   
     .project{
         display: flex;
     }
@@ -980,21 +890,12 @@ footer{
         display: flex;
     }
     nav{
-        width: 260px;
+        width: 200px;
         background-color: #0975D9;
         height: 100vh;
         display: none;
 
     }
-    .containerh, .container{
-        max-width: 350px;
-    }
-    .sobre-area-text {
-        display: flex;
-        flex-direction: column;
-        /* width: 346px; */
-    }
-    
     
     .passFunc{
         animation: none;
@@ -1091,7 +992,7 @@ footer{
     }
 
     .section-espec{
-        height: 1280px;
+        height: 800px;
     }
     .espec{
         display: flex;
@@ -1100,23 +1001,6 @@ footer{
     .section-espec-area{
         flex-direction: column;
     }
-    .area-box-a{
-        flex-direction: column;
-        margin-top: 25px;
-    }
-    .box{
-        margin-top: 20px;
-    }
-
-    .section-espec-text{
-        width: 300px;
-        margin-right: 0px;
-    }
-    .section-espec-text-b{
-        position: relative;
-        left: -25px;
-    }
-
 
     .section-espec-text p{
         width: 290px;
