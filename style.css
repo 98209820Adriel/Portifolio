@@ -617,7 +617,7 @@ circle:nth-child(1){
 }
 
 .project{
-   
+    height: 100%;
     
     align-items: center;
     flex-direction: column;

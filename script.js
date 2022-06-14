@@ -17,6 +17,7 @@ function redeTh(){
         rede.classList.add('revert-top');
         project.style.height = '100%';
 }
+redeTh();
 
 
 function redeFo(){
