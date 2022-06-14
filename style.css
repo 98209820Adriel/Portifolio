@@ -617,7 +617,7 @@ circle:nth-child(1){
 }
 
 .project{
-    display: none;
+   
     
     align-items: center;
     flex-direction: column;
@@ -772,6 +772,53 @@ circle:nth-child(1){
     width: 100%;
     height: 100%;
 }
+
+#slide1-sf:checked ~ .sA{
+    margin-left: 0;
+}
+
+#slide2-sf:checked ~ .sA{
+    margin-left: -34%;
+}
+#slide3-sf:checked ~ .sA{
+    margin-left: -68%;
+}
+
+#slide1-if:checked ~ .sB{
+    margin-left: 0;
+}
+
+#slide2-if:checked ~ .sB{
+    margin-left: -34%;
+}
+#slide3-if:checked ~ .sB{
+    margin-left: -68%;
+}
+
+#slide1-imc:checked ~ .sC{
+    margin-left: 0;
+}
+
+#slide2-imc:checked ~ .sC{
+    margin-left: -34%;
+}
+#slide3-imc:checked ~ .sC{
+    margin-left: -68%;
+}
+
+#slide1-lt:checked ~ .sD{
+    margin-left: 0;
+}
+
+#slide2-lt:checked ~ .sD{
+    margin-left: -34%;
+}
+#slide3-lt:checked ~ .sD{
+    margin-left: -68%;
+}
+
+
+
 
 #slide1:checked ~ .s1{
     margin-left: 0;
