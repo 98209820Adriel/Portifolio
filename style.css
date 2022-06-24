@@ -784,6 +784,44 @@ circle:nth-child(1){
     margin-left: -68%;
 }
 
+#slide1-ad:checked ~ .a1{
+    margin-left: 0;
+}
+
+#slide2-ad:checked ~ .a1{
+    margin-left: -34%;
+}
+#slide3-ad:checked ~ .a1{
+    margin-left: -68%;
+}
+
+#slide1-fd:checked ~ .a2{
+    margin-left: 0;
+}
+
+#slide2-fd:checked ~ .a2{
+    margin-left: -34%;
+}
+#slide3-fd:checked ~ .a2{
+    margin-left: -68%;
+}
+
+#slide1-ga:checked ~ .a3{
+    margin-left: 0;
+}
+
+#slide2-ga:checked ~ .a3{
+    margin-left: -34%;
+}
+#slide3-ga:checked ~ .a3{
+    margin-left: -68%;
+}
+
+
+
+
+
+
 #slide1-if:checked ~ .sB{
     margin-left: 0;
 }
