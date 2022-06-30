@@ -1,179 +1,122 @@
-function rede(){
-     let rede = document.getElementById('func');
-        rede.classList.add('revert-top');
+
+
+function mostraSlide(num){
+    let valor =  num;
+
+    if(valor === 1){
+        document.getElementById('check-1').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 2){
+        document.getElementById('check-2').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 3){
+        document.getElementById('check-3').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 4){
+        document.getElementById('check-4').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 5){
+        document.getElementById('check-5').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 6){
+        document.getElementById('check-6').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 7){
+        document.getElementById('check-7').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 8){
+        document.getElementById('check-8').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 9){
+        document.getElementById('check-9').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 10){
+        document.getElementById('check-10').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 11){
+        document.getElementById('check-11').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 12){
+        document.getElementById('check-12').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 13){
+        document.getElementById('check-13').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 14){
+        document.getElementById('check-14').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }else if(valor === 15){
+        document.getElementById('check-15').style.display = 'flex';
+        document.getElementsByClassName('projeto-1').style.display = 'flex';
+    }
+    
     
 }
 
-function redeTwo(){
-    let rede = document.getElementById('funcTwo');
-        rede.classList.add('revert-top');
+function exitPro(num){
+    let valor =  num;
+
+
+    if(valor === 1){
+        document.getElementById('check-1').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 2){
+        document.getElementById('check-2').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 3){
+        document.getElementById('check-3').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 4){
+        document.getElementById('check-4').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 5){
+        document.getElementById('check-5').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 6){
+        document.getElementById('check-6').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 7){
+        document.getElementById('check-7').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 8){
+        document.getElementById('check-8').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 9){
+        document.getElementById('check-9').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 10){
+        document.getElementById('check-10').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 11){
+        document.getElementById('check-11').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 12){
+        document.getElementById('check-12').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 13){
+        document.getElementById('check-13').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 14){
+        document.getElementById('check-14').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }else if(valor === 15){
+        document.getElementById('check-15').style.display = 'none';
+        document.getElementsByClassName('projeto-1').style.display = 'none';
+    }
+
+    
+
    
 }
 
+function menuBug(){
+    let menu = document.getElementById('men');
 
-function redeTh(){
-    let rede = document.getElementById('funcTh');
-    let project = document.getElementById('project');
-        rede.classList.add('revert-top');
-        project.style.height = '100%';
-}
-redeTh();
-
-
-function redeFo(){
-    let rede = document.getElementById('funcFo');
-        rede.classList.add('revert-top');
-   
-}
-
-function pass(){
-    let passar = document.getElementById('pass');
-
-    passar.classList.remove("passExit");
-    passar.style.display = "flex";
-    passar.classList.add("passFunc");
-
-}
-
-function passX(){
-    let sair = document.getElementById('pass');
-    
-
-    
-
-    sair.classList.remove("passFunc");
-    sair.classList.add("passExit");
-    
-}
-
-
-function passTw(){
-    let passar = document.getElementById('passTw');
-
-    passar.classList.remove("passExit");
-    passar.style.display = "flex";
-    passar.classList.add("passFunc");
-
-}
-
-function passXtw(){
-    let sair = document.getElementById('passTw');
-
-    
-
-    sair.classList.remove("passFunc");
-    sair.classList.add("passExit");
-    
-}
-
-function passTh(){
-    let passar = document.getElementById('passTh');
-
-    passar.classList.remove("passExit");
-    passar.style.display = "flex";
-    passar.classList.add("passFunc");
-
-}
-
-function passXth(){
-    let sair  = document.getElementById('passTh');
-
-    
-
-    sair.classList.remove("passFunc");
-    sair.classList.add("passExit");
-    
-}
-
-function passFo(){
-    let passar = document.getElementById('passFo');
-
-    passar.classList.remove("passExit");
-    passar.style.display = "flex";
-    passar.classList.add("passFunc");
-
-}
-
-function passXFo(){
-    let sair  = document.getElementById('passFo');
-
-    
-
-    sair.classList.remove("passFunc");
-    sair.classList.add("passExit");
-    
-}
-
-function passFi(){
-    let passar = document.getElementById('passFi');
-
-    passar.classList.remove("passExit");
-    passar.style.display = "flex";
-    passar.classList.add("passFunc");
-
-}
-
-function passXfi(){
-    let sair  = document.getElementById('passFi');
-
-    
-
-    sair.classList.remove("passFunc");
-    sair.classList.add("passExit");
-    
-}
-
-function passSi(){
-    let passar = document.getElementById('passSi');
-
-    passar.classList.remove("passExit");
-    passar.style.display = "flex";
-    passar.classList.add("passFunc");
-
-}
-
-function passXsi(){
-    let sair  = document.getElementById('passSi');
-
-    
-
-    sair.classList.remove("passFunc");
-    sair.classList.add("passExit");
-    
-}
-
-function passNi(){
-    let passar = document.getElementById('passNi');
-
-    passar.classList.remove("passExit");
-    passar.style.display = "flex";
-    passar.classList.add("passFunc");
-
-}
-
-function passXni(){
-    let sair  = document.getElementById('passNi');
-
-    
-
-    sair.classList.remove("passFunc");
-    sair.classList.add("passExit");
-    
-}
-
-function menuM(){
-    let aside = document.getElementById('mobile-menu');
-    let nav  = document.getElementById('mobile-nav');
-    
-    aside.style.display = "flex";
-    nav.style.display = "flex";
-}
-
-function exitMenu(){
-    let aside = document.getElementById('mobile-menu');
-    let nav  = document.getElementById('mobile-nav');
-    
-
-    aside.style.display = "none";
-    nav.style.display = "none";
+    if(menu.classList.contains('test')){
+        menu.style.display = 'block';
+        menu.classList.remove('test');
+    }else{
+        menu.style.display = 'none';
+        menu.classList.add('test');
+    }
 }
