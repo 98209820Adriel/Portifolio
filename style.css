@@ -799,7 +799,7 @@ footer p{
         left: 147px;
     }
 }
-@media (max-width:360px){
+@media (max-width:359px) and (min-width:310px){
     .menu-hambur{
         display: block;
     }
