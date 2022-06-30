@@ -207,6 +207,8 @@ code{
 }
 
 .link{
+    cursor: pointer;
+    text-decoration: none;
     background-color: var(--color-1);
     padding: 5px 20px;
     color: rgb(255, 255, 255);
@@ -735,6 +737,10 @@ footer p{
         right: 30px;
         cursor: pointer;
     }
+    .banner-area-2{
+        margin-left: 100px;
+        width: 0px;
+    }
     .banner-area-1{
         margin-left: 36px;
     }
@@ -769,6 +775,29 @@ footer p{
     .area-cont{
         margin: 9px 40px;
     }
+
+    .projeto-area{
+        width: 330px;
+    }
+    .carousel{
+        margin-bottom: -30px;
+    }
+
+    .carousel-item img {
+        max-width: 278px;
+        height: 183px;
+    }
+    .area-projeto-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skills-area img {
+        width: 40px;
+    }
+    .exit{
+        left: 147px;
+    }
 }
 @media (max-width:360px){
     .menu-hambur{
@@ -779,6 +808,10 @@ footer p{
         max-width: 250px;
     }
 
+    .banner-area-2{
+        margin-left: 100px;
+        width: 0px;
+    }
     .link ,.git{
         padding:  5px 11px;
     }
@@ -837,6 +870,41 @@ footer p{
 
     .area-cont{
         margin: 9px 40px;
+    }
+    .projeto-area{
+        width: 280px;
+    }
+    .carousel{
+        margin-bottom: -50px;
+    }
+
+    .carousel-item img {
+        max-width: 253px;
+        height: 171px;
+    }
+    .area-projeto-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 250px;
+    }
+
+    .projeto-text p {
+        width: 239px;
+        font-size: 12px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .projeto-text a{
+        margin-left: 144px;
+    }
+
+    .skills-area img {
+        width: 40px;
+    }
+    .exit{
+        left: 118px;
     }
 }
 
