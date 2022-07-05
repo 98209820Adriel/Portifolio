@@ -1,1084 +1,1296 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/flaticon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/flaticon.png" type="image/x-icon">
 
 </head>
-<body>
 
-    <header>
-        <nav>
-            <div>Portifólio</div>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active cor" aria-current="page" href="#home">Home </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link cor" href="#sobre">Sobre mim</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link cor" href="#espec">Especialidades</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link cor" href="#projetos">Projetos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link cor "  href="#contato">Contato</a>
-                  </li>
-              </ul>
-        </nav>
-        
-        <div class="nav-mobile-3 test" id="men">
-          <ul>
-            <li class="li-nav"><a onclick="menuBug()" href="#home">Home</a></li>
-            <li class="li-nav"><a onclick="menuBug()" href="#sobre">Sobre mim</a></li>
-            <li class="li-nav"><a onclick="menuBug()" href="#espec">Especialidades</a></li>
-            <li class="li-nav"><a onclick="menuBug()" href="#projetos">Projetos</a></li>
-            <li class="li-nav"><a onclick="menuBug()" href="#contato">Contato</a></li>
-          </ul>
-        </div>
+<body class="body-1">
 
-        <div class="menu-hambur" onclick="menuBug()"></div>
-      
+  <header>
+    <nav>
+      <div class='logotipo'>Portifólio</div>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active cor" aria-current="page" href="#home">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cor " href="#sobre">Sobre mim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cor " href="#espec">Especialidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cor " href="#projetos">Projetos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cor  " href="#contato">Contato</a>
+        </li>
+      </ul>
+    </nav>
 
-       
-    </header>
+    <div class="nav-mobile-3 test" id="men">
+      <ul>
+        <li class="li-nav"><a onclick="menuBug()" href="#home">Home</a></li>
+        <li class="li-nav"><a onclick="menuBug()" href="#sobre">Sobre mim</a></li>
+        <li class="li-nav"><a onclick="menuBug()" href="#espec">Especialidades</a></li>
+        <li class="li-nav"><a onclick="menuBug()" href="#projetos">Projetos</a></li>
+        <li class="li-nav"><a onclick="menuBug()" href="#contato">Contato</a></li>
+        <li><select id="selecao" name="selec" onchange="tema()" class="select-2">
+          <option value="classico" class="classico">Classic</div>
+          </option>
+          <option value="neon" class="neon">Neon</option>
+        </select></li>
+      </ul>
+    </div>
+
+    <div class="menu-hambur" onclick="menuBug()"></div>
 
 
-    <main>
-        <section class="section-banner" id="home">
-            <div class="container-lg banner-area">
-                <div class="banner-area-1">
-                    <div class="area-1-title">
-                        <span>Olá, eu sou</span>
-                        <h1>ADRIEL HAHN <code> <\>  </code></h1>
-                        <span>Desenvolvedor Front-End</span>
-                    </div>
-                    <div class="area-1-botao">
-                        <a href="https://github.com/98209820Adriel" class="git">
-                            <img src="images/github (2).png" alt="">
-                                Github
-                        </a>
-                        <a href="https://www.linkedin.com/in/adriel-hahn-ab7196211" class="link"> 
-                            <img src="images/linkedi1.png" alt="">
-                            Linkedin
-                        </a>
-                    </div>
-                </div>
-                <div class="banner-area-2">
+    <select class="select-1" id="selecao" name="selec" onchange="tema()" >
+      <option value="classico" class="classico">Classic</div>
+      </option>
+      <option value="neon" class="neon">Neon</option>
+    </select>
+  </header>
 
-                </div>
-            </div>
-        </section>
-        <section class="section-sobre" id="sobre">
-            <div class="container-lg sobre-area">
-                <div class="area-sobre-1">
-                    <img src="images/1619843225869.jpg" alt="">
-                </div>
-                <div class="area-sobre-2">
-                    <div class="area-sobre-2-title">
-                        <h1>Sobre Mim</h1>
-                        <h2>Alvorada, RS - Brasil</h2>
-                        <p>E sou um amante da tecnologia e inovação principalmente da área de tecnologia móvel e web, criando sites, templates e sistemas e sempre estive envolvido no mundo da tecnologia desde pequeno quando ganhei o primeiro computador ate o primeiro "Hello World!" e acredito que um bom profissional requer não apenas o comprometimento e transparência mas também nunca deixar de acreditar em si mesmo.</p>
-                    </div>
-                    
-                    <div class="area-sobre-2-icon">
-                        <a href="https://discord.com/channels/@me" target="_blank" class="icon-sobre">
-                            <img src="images/discordia.png" alt="">
-                        </a>
-                        <a href="https://www.figma.com/files/drafts?fuid=1088288676547599688" target="_blank" class="icon-sobre">
-                            <img src="images/figma.png" alt="">
-                        </a>
-                        <a href="" target="_blank" class="icon-sobre">
-                            <img src="images/instagram (4).png" alt="">
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=5551986358851" target="_blank" class="icon-sobre">
-                            <img src="images/whatsapp (1).png" alt="">
-                        </a>
-                        <a href="https://www.facebook.com/adrielhahn.adrielpedrohahn/" target="_blank" class="icon-sobre">
-                            <img src="images/facebook (2).png" alt="">
-                        </a>
-                    </div>
-                    <div class="area-sobre-2-bot">
-                        <a href="images/Curriculo-Adriel.pdf" target="_blank"  class="sobre-botao">
-                            <img src="images/nuvem.png" alt="">
-                            Curriculo
-                        </a>
-                        <a href="mailto:adrielhahn@hotmail.com" class="sobre-botao-2">
-                            <img src="images/email.png" alt="">
-                            Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="section-espec" id="espec">
-            <div class="container-lg espec-area ">
-            
 
-                <div class="espec-area-1">
-                    <h1>Minhas Skills</h1>
-                    <div class="espec-img">
-                        <div class="espec-img-area ">
-                            <img src="images/HTML (1).png" alt="">
-                        </div>
-                        <div class="espec-img-area">
-                            <img src="images/css.png" alt="">
-                        </div>
-                        <div class="espec-img-area">
-                            <img src="images/javascript.png" alt="">
-                        </div>
-                        <div class="espec-img-area">
-                            <img src="images/react.png" alt="">
-                        </div>
-                        <div class="espec-img-area">
-                            <img src="images/ts.png" alt="">
-                        </div>
-                        <div class="espec-img-area">
-                            <img src="images/vue.png" alt="">
-                        </div>
-                        <div class="espec-img-area">
-                            <img src="images/git.png" alt="">
-                        </div>
-                        <div class="espec-img-area">
-                            <img src="images/mysql.png" alt="">
-                        </div>
-                       
-                        <div class="espec-img-area">
-                            <img src="images/sass.png" alt="">
-                        </div>
-                        <div class="espec-img-area">
-                            <img src="images/boot.png" alt="">
-                        </div>
-                        <div class="espec-img-area">
-                            <img src="images/tail.png" alt="">
-                        </div>
-                        <div class="espec-img-area">
-                            <img src="images/uiux.png" alt="">
-                        </div>
-                    </div>
-
-                </div>
-                
-
-            </div>
-        </section>
-
-        <section class="section-project " id="projetos">
-            <h1>Projetos</h1>
-            <div class="constainer-lg project-area">
-                
-                <div class="card" >
-                    <img src="images/financas.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Sistema de Finanças</h5>
-                      <p class="card-text ">Sistema de finanças que contabiliza os gastos e ganhos do mês e faz um balanço total.</p>
-                      <div class="projet-bot" onclick="mostraSlide(1)">
-                            <img src="images/lupa (1).png" alt="">
-                        Vizualizar</div>
-                    </div>
-                </div>
-
-                 
-                <div class="card" >
-                    <img src="images/advogado.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Site Advocacia</h5>
-                      <p class="card-text ">Site de advocacia que mostra um template de exemplo de site para tal área.</p>
-                      <div class="projet-bot" onclick="mostraSlide(2)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>
-                 
-                <div class="card" >
-                    <img src="images/formula.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Formulario Dev</h5>
-                      <p class="card-text ">Formulario  feito em react que simula um cadastro multi etapas para contratar um dev.</p>
-                      <div class="projet-bot" onclick="mostraSlide(3)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <img src="images/med.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Cadastro Med</h5>
-                      <p class="card-text ">Sistema que cadastra um medico para um banco de dados.</p>
-                      <div class="projet-bot" onclick="mostraSlide(4)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <img src="images/lotusint.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Intimate Flower</h5>
-                      <p class="card-text ">Blogue que auxilia e ajuda a entender o funcionamento, curiosidades e cuidados do corpo feminino.</p>
-                      <div class="projet-bot" onclick="mostraSlide(5)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <img src="images/galeriass.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Galeria</h5>
-                      <p class="card-text ">Sistema de galeria que amarzena e exclui arquivos de imagens em sistema de nuvem usanado firebase.</p>
-                      <div class="projet-bot" onclick="mostraSlide(6)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>
-                <div class="card" >
-                    <img src="images/IMC.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Calculadora IMC</h5>
-                      <p class="card-text ">Site que calcula seu imc e trás o resultado na hora do seu imc.</p>
-                      <div class="projet-bot" onclick="mostraSlide(7)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <img src="images/lista.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Lista de Tarefas</h5>
-                      <p class="card-text ">Sitema de lista de tarefas que adiciona e recria uma lista de tarefas diaria criada em react.</p>
-                      <div class="projet-bot" onclick="mostraSlide(8)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <img src="images/pizzas.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Compra de Pizzas</h5>
-                      <p class="card-text ">Sistema que simula uma compra de pizza em um restaurante.</p>
-                      <div class="projet-bot" onclick="mostraSlide(9)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>
-                  
-                <div class="card" >
-                    <img src="images/urnaele.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Urna Eletrônica</h5>
-                      <p class="card-text ">Site que simula funçoes de uma urna eletrônica brasileira.</p>
-                      <div class="projet-bot" onclick="mostraSlide(10)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <img src="images/tempocli.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Clima e Tempo</h5>
-                      <p class="card-text ">Site que ultiliza api para mostrar o clima em qualquer lugar do mundo.</p>
-                      <div class="projet-bot" onclick="mostraSlide(11)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <img src="images/cafe.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Clone Starbuks</h5>
-                      <p class="card-text ">Clone do site starbuks totalmente responsivo em html e css apenas.</p>
-                      <div class="projet-bot" onclick="mostraSlide(12)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <img src="images/calc.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Project calculadora</h5>
-                      <p class="card-text ">Site que desempenha as funções de uma calculadora covencional.</p>
-                      <div class="projet-bot" onclick="mostraSlide(13)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <img src="images/coroa.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Site Ajax</h5>
-                      <p class="card-text ">Site criado com inspiração no site ajax que vende serviços de design.</p>
-                      <div class="projet-bot" onclick="mostraSlide(14)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>
-
-                <div class="card" >
-                    <img src="images/velha.png" class="card-img-top" alt="...">
-                    <div class="card-body c">
-                      <h5 class="card-title ">Jogo da Velha</h5>
-                      <p class="card-text ">Site que simula e desempenha o clássico jogo da velha </p>
-                      <div class="projet-bot" onclick="mostraSlide(15)">
-                        <img src="images/lupa (1).png" alt="">
-                    Vizualizar</div>
-                    </div>
-                </div>   
-            </div>
-        </section>
-        <section class="section-servi">
-          <div class='container-lg servi-area'>
-            <div class="espec-area-2">
-              <h1>Serviços</h1>
-              <div class="espec-serv">
-                  <div class="area-espec-serv">
-                          <img src="images/codigo.png" alt="">
-                          <p>Criação de sites</p>
-                  </div>
-                  <div class="area-espec-serv">
-                      <img src="images/figam2.png" alt="">
-                      <p>UI Designer</p>
-                  </div>
-                  <div class="area-espec-serv">
-                      <img src="images/celular.png" alt="">
-                      <p>Sistemas Web</p>
-                  </div>
-              </div>
-              
+  <main>
+    <section class="section-banner" id="home">
+      <div class="container-lg banner-area">
+        <div class="banner-area-1">
+          <div class="area-1-title">
+            <span>Olá, eu sou</span>
+            <h1>ADRIEL HAHN <code class="code-1 ">
+                <\>
+              </code></h1>
+            <span>Desenvolvedor Front-End</span>
           </div>
+          <div class="area-1-botao">
+            <a href="https://github.com/98209820Adriel" class="git">
+              <img src="images/github (2).png" alt="">
+              Github
+            </a>
+            <a href="https://www.linkedin.com/in/adriel-hahn-ab7196211" class="link">
+              <img src="images/linkedi1.png" alt="">
+              Linkedin
+            </a>
           </div>
-        </section>
-        <section class="section-contato" id="contato">
-          <h1>Contato</h1>
-            <div class="container-lg contato-area">
-               <div class="area-cont">
-                  <img src="images/d-whatshap.png" alt="">
-                  <p>(51) 98635-8851</p>
-               </div>
-               <div class="area-cont">
-                <img src="images/d-email.png" alt="">
-                <p>Adrielhahn@hotmail.com</p>
-               </div>
-               <div class="area-cont">
-                <img src="images/d-git.png" alt="">
-                <p>98109810Adriel</p>
-               </div>
-               <div class="area-cont">
-                <img src="images/d-link.png" alt="">
-                <p>Adriel Hahn</p>
-               </div>
-            </div>
-        </section>
-        <footer>
-           <p>@Adriel Hahn, Todos os Direitos reservados.</p>
-        </footer>
-    
-         
-
-
-    </main>
-
-    <div class="projeto-1" id="check-1">
-        <div class="exit" onclick="exitPro(1)"></div>
-        <div class="projeto-area">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/Financas-1.PNG" class="d-block w-100 " alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/financas-2.PNG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/financas-3.PNG" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden pcor">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden pcor">Next</span>
-                </button>
-              </div>
-              <h1>Sistema de finanças</h1>
-                <div class="area-projeto-2">
-                    
-                    <div class="skills">
-                        <h1>Tecnologias</h1>
-                        <div class="skills-area">
-                            <img src="images/react.png" alt="">
-                            <img src="images/ts.png" alt="">
-                        </div>
-                    
-                    </div>
-                    <div class="projeto-text">
-                        <p>Sistema de finanças que contabiliza os gastos e ganhos do mês e faz um balanço total, feito em react, se quiser saber mais so clicar em ver mais.</p>
-                        <a href="https://github.com/98209820Adriel/Sistema-de-Finacas" target="_blank" class="projeto-link">Ver mais</a>
-                    </div>
-              
-              </div>
-            
         </div>
-    </div>
+        <div class="banner-area-2">
 
-    <div class="projeto-1" id="check-2">
-        <div class="exit" onclick="exitPro(2)"></div>
-        <div class="projeto-area">
-            <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/adv-1.PNG" class="d-block w-100 " alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/adv-2.PNG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/adv-3.PNG" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" ></span>
-                  <span class="visually-hidden pcor">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden pcor">Next</span>
-                </button>
-              </div>
-              <h1>Site Advocacia</h1>
-                <div class="area-projeto-2">
-                    
-                    <div class="skills">
-                        <h1>Tecnologias</h1>
-                        <div class="skills-area">
-                            <img src="images/HTML (1).png" alt="">
-                            <img src="images/css.png" alt="">
-                        </div>
-                    
-                    </div>
-                    <div class="projeto-text">
-                        <p>Site de advocacia que mostra um template de exemplo de site para tal área, se quiser saber mais só clicar em ver mais.</p>
-                        <a href="https://98209820adriel.github.io/Site-Advocacia/" target="_blank" class="projeto-link">Ver mais</a>
-                    </div>
-              
-              </div>
-            
         </div>
-    </div>
-
-    <div class="projeto-1" id="check-3">
-        <div class="exit" onclick="exitPro(3)"></div>
-        <div class="projeto-area">
-            <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/formu.PNG" class="d-block w-100 " alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/formu-2.PNG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/formu-3.PNG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/formu-4.PNG" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden pcor">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden pcor">Next</span>
-                </button>
-              </div>
-              <h1>Formulario Dev</h1>
-                <div class="area-projeto-2">
-                    
-                    <div class="skills">
-                        <h1>Tecnologias</h1>
-                        <div class="skills-area">
-                            <img src="images/react.png" alt="">
-                            <img src="images/ts.png" alt="">
-                        </div>
-                    
-                    </div>
-                    <div class="projeto-text">
-                        <p>Formulario feito em react que simula um cadastro multi etapas para contratar um dev, se quiser saber mais só clicar em ver mais.</p>
-                        <a href="https://github.com/98209820Adriel/formMulti" target="_blank" class="projeto-link">Ver mais</a>
-                    </div>
-              
-              </div>
-            
-        </div>
-    </div>
-
-    <div class="projeto-1" id="check-4">
-        <div class="exit" onclick="exitPro(4)"></div>
-        <div class="projeto-area">
-            <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/cadasmed1.PNG" class="d-block w-100 " alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/cadasmed2.PNG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/cadasmed3.PNG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/cadasmed4.PNG" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden pcor">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden pcor">Next</span>
-                </button>
-              </div>
-              <h1>Cadastro Med</h1>
-                <div class="area-projeto-2">
-                    
-                    <div class="skills">
-                        <h1>Tecnologias</h1>
-                        <div class="skills-area">
-                            <img src="images/react.png" alt="">
-                            <img src="images/ts.png" alt="">
-                        </div>
-                    
-                    </div>
-                    <div class="projeto-text">
-                        <p>Sistema que cadastra um medico para um banco de dados, se quiser saber mais só clicar em ver mais.</p>
-                        <a href="https://github.com/98209820Adriel/FormularioMed" target="_blank" class="projeto-link">Ver mais</a>
-                    </div>
-              
-              </div>
-            
-        </div>
-    </div>
-
-    <div class="projeto-1" id="check-5">
-        <div class="exit" onclick="exitPro(5)"></div>
-        <div class="projeto-area">
-            <div id="carouselExampleControls5" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/flor-1.PNG" class="d-block w-100 " alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/flor-2.PNG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/flor-3.PNG" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden pcor">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden pcor">Next</span>
-                </button>
-              </div>
-              <h1>Intimate Flower</h1>
-                <div class="area-projeto-2">
-                    
-                    <div class="skills">
-                        <h1>Tecnologias</h1>
-                        <div class="skills-area">
-                            <img src="images/HTML (1).png" alt="">
-                            <img src="images/css.png" alt="">
-                            <img src="images/javascript.png" alt="">
-                        </div>
-                    
-                    </div>
-                    <div class="projeto-text">
-                        <p>Blogue que auxilia e ajuda a entender o funcionamento, curiosidades e cuidados do corpo feminino, se quiser saber mais só clicar em ver mais. </p>
-                        <a href="https://98209820adriel.github.io/Intimate-Flower/" target="_blank" class="projeto-link">Ver mais</a>
-                    </div>
-              
-              </div>
-            
-        </div>
-    </div>
-
-    <div class="projeto-1" id="check-6">
-        <div class="exit" onclick="exitPro(6)"></div>
-        <div class="projeto-area">
-            <div id="carouselExampleControls6" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/galeria-1.png" class="d-block w-100 " alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/galeria-2.PNG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/galeria-3.PNG" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden pcor">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden pcor">Next</span>
-                </button>
-              </div>
-              <h1>Galeria</h1>
-                <div class="area-projeto-2">
-                    
-                    <div class="skills">
-                        <h1>Tecnologias</h1>
-                        <div class="skills-area">
-                            <img src="images/react.png" alt="">
-                            <img src="images/ts.png" alt="">
-                        </div>
-                    
-                    </div>
-                    <div class="projeto-text">
-                        <p>Sistema de galeria que amarzena e exclui arquivos de imagens em sistema de nuvem usanado firebase, se quiser saber mais só clicar em ver mais.</p>
-                        <a href="https://github.com/98209820Adriel/galeria" target="_blank" class="projeto-link">Ver mais</a>
-                    </div>
-              
-              </div>
-            
-        </div>
-    </div>
-
-    <div class="projeto-1" id="check-7">
-        <div class="exit" onclick="exitPro(7)"></div>
-        <div class="projeto-area">
-            <div id="carouselExampleControls7" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/imc-1.PNG" class="d-block w-100 " alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/imc-2.PNG" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/imc-3.PNG" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden pcor">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden pcor">Next</span>
-                </button>
-              </div>
-              <h1>Calculadora IMC</h1>
-                <div class="area-projeto-2">
-                    
-                    <div class="skills">
-                        <h1>Tecnologias</h1>
-                        <div class="skills-area">
-                            <img src="images/react.png" alt="">
-                            <img src="images/ts.png" alt="">
-                        </div>
-                    
-                    </div>
-                    <div class="projeto-text">
-                        <p>Site que calcula seu imc e trás o resultado na hora do seu imc, se quiser saber mais só clicar em ver mais.</p>
-                        <a href="https://github.com/98209820Adriel/react-calc-imc-main/blob/master/README.md" target="_blank" class="projeto-link">Ver mais</a>
-                    </div>
-              
-              </div>
-            
-        </div>
-    </div>
-
-    <div class="projeto-1" id="check-8">
-      <div class="exit" onclick="exitPro(8)"></div>
-      <div class="projeto-area">
-          <div id="carouselExampleControls8" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="images/lista-1.PNG" class="d-block w-100 " alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/lista-2.PNG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/lista-3.PNG" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden pcor">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden pcor">Next</span>
-              </button>
-            </div>
-            <h1>Lista de Tarefas</h1>
-              <div class="area-projeto-2">
-                  
-                  <div class="skills">
-                      <h1>Tecnologias</h1>
-                      <div class="skills-area">
-                          <img src="images/react.png" alt="">
-                          <img src="images/ts.png" alt="">
-                      </div>
-                  
-                  </div>
-                  <div class="projeto-text">
-                      <p>Sitema de lista de tarefas que adiciona e recria uma lista de tarefas diaria criada em react, se quiser saber mais só clicar em ver mais.</p>
-                      <a href="https://github.com/98209820Adriel/Lista-de-Tarefa" target="_blank" class="projeto-link">Ver mais</a>
-                  </div>
-            
-            </div>
-          
       </div>
+    </section>
+    <section class="section-sobre" id="sobre">
+      <div class="container-lg sobre-area">
+        <div class="area-sobre-1">
+          <img src="images/1619843225869.jpg" alt="">
+        </div>
+        <div class="area-sobre-2">
+          <div class="area-sobre-2-title">
+            <h1>Sobre Mim</h1>
+            <h2>Alvorada, RS - Brasil</h2>
+            <p>E sou um amante da tecnologia e inovação principalmente da área de tecnologia móvel e web, criando sites,
+              templates e sistemas e sempre estive envolvido no mundo da tecnologia desde pequeno quando ganhei o
+              primeiro computador ate o primeiro "Hello World!" e acredito que um bom profissional requer não apenas o
+              comprometimento e transparência mas também nunca deixar de acreditar em si mesmo.</p>
+          </div>
+
+          <div class="area-sobre-2-icon">
+            <a href="https://discord.com/channels/@me" target="_blank" class="icon-sobre">
+              <img src="images/discordia.png" alt="">
+            </a>
+            <a href="https://www.figma.com/files/drafts?fuid=1088288676547599688" target="_blank" class="icon-sobre">
+              <img src="images/figma.png" alt="">
+            </a>
+            <a href="" target="_blank" class="icon-sobre">
+              <img src="images/instagram (4).png" alt="">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5551986358851" target="_blank" class="icon-sobre">
+              <img src="images/whatsapp (1).png" alt="">
+            </a>
+            <a href="https://www.facebook.com/adrielhahn.adrielpedrohahn/" target="_blank" class="icon-sobre">
+              <img src="images/facebook (2).png" alt="">
+            </a>
+          </div>
+          <div class="area-sobre-2-bot">
+            <a href="images/Curriculo-Adriel.pdf" target="_blank" class="sobre-botao">
+              <img src="images/nuvem.png" alt="">
+              Curriculo
+            </a>
+            <a href="mailto:adrielhahn@hotmail.com" class="sobre-botao-2">
+              <img src="images/email.png" alt="">
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-espec" id="espec">
+      <div class="container-lg espec-area ">
+
+
+        <div class="espec-area-1">
+          <h1>Minhas Skills</h1>
+          <div class="espec-img">
+            <div class="espec-img-area ">
+              <img src="images/HTML (1).png" alt="">
+            </div>
+            <div class="espec-img-area">
+              <img src="images/css.png" alt="">
+            </div>
+            <div class="espec-img-area">
+              <img src="images/javascript.png" alt="">
+            </div>
+            <div class="espec-img-area">
+              <img src="images/react.png" alt="">
+            </div>
+            <div class="espec-img-area">
+              <img src="images/ts.png" alt="">
+            </div>
+            <div class="espec-img-area">
+              <img src="images/vue.png" alt="">
+            </div>
+            <div class="espec-img-area">
+              <img src="images/git.png" alt="">
+            </div>
+            <div class="espec-img-area">
+              <img src="images/mysql.png" alt="">
+            </div>
+
+            <div class="espec-img-area">
+              <img src="images/sass.png" alt="">
+            </div>
+            <div class="espec-img-area">
+              <img src="images/boot.png" alt="">
+            </div>
+            <div class="espec-img-area">
+              <img src="images/tail.png" alt="">
+            </div>
+            <div class="espec-img-area">
+              <img src="images/uiux.png" alt="">
+            </div>
+          </div>
+
+
+          <div class="espec-img-2">
+            <div class="espec-img-area-2 ">
+              <img src="images/html-neon.png" alt="">
+            </div>
+            <div class="espec-img-area-2">
+              <img src="images/css-neon.png" alt="">
+            </div>
+            <div class="espec-img-area-2">
+              <img src="images/js-neon.png" alt="">
+            </div>
+            <div class="espec-img-area-2">
+              <img src="images/react-neon.png" alt="">
+            </div>
+            <div class="espec-img-area-2">
+              <img src="images/ts-neon.png" alt="">
+            </div>
+            <div class="espec-img-area-2">
+              <img src="images/vue-neon.png" alt="">
+            </div>
+            <div class="espec-img-area-2">
+              <img src="images/git-neon.png" alt="">
+            </div>
+            <div class="espec-img-area-2">
+              <img src="images/sql-neon.png" alt="">
+            </div>
+
+            <div class="espec-img-area-2">
+              <img src="images/sass-neon.png" alt="">
+            </div>
+            <div class="espec-img-area-2">
+              <img src="images/boot-neon.png" alt="">
+            </div>
+            <div class="espec-img-area-2">
+              <img src="images/tawi-neon.png" alt="">
+            </div>
+            <div class="espec-img-area-2">
+              <img src="images/uiux-neon.png" alt="">
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="section-project " id="projetos">
+      <h1>Projetos</h1>
+      <div class="constainer-lg project-area">
+
+        <div class="card">
+          <img src="images/financas.png" class="card-img-top" alt="...">
+          <div class="card-body c">
+            <h5 class="card-title">Sistema de Finanças</h5>
+            <p class="card-text ">Sistema de finanças que contabiliza os gastos e ganhos do mês e faz um balanço total.
+            </p>
+            <div class="projet-bot " onclick="mostraSlide(1)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img src="images/advogado.png" class="card-img-top" alt="...">
+          <div class="card-body c ">
+            <h5 class="card-title ">Site Advocacia</h5>
+            <p class="card-text ">Site de advocacia que mostra um template de exemplo de site para tal área.</p>
+            <div class="projet-bot" onclick="mostraSlide(2)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/formula.png" class="card-img-top" alt="...">
+          <div class="card-body c ">
+            <h5 class="card-title ">Formulario Dev</h5>
+            <p class="card-text ">Formulario feito em react que simula um cadastro multi etapas para contratar um dev.
+            </p>
+            <div class="projet-bot" onclick="mostraSlide(3)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/med.png" class="card-img-top" alt="...">
+          <div class="card-body c ">
+            <h5 class="card-title ">Cadastro Med</h5>
+            <p class="card-text ">Sistema que cadastra um medico para um banco de dados.</p>
+            <div class="projet-bot" onclick="mostraSlide(4)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/lotusint.png" class="card-img-top" alt="...">
+          <div class="card-body c ">
+            <h5 class="card-title ">Intimate Flower</h5>
+            <p class="card-text ">Blogue que auxilia e ajuda a entender o funcionamento, curiosidades e cuidados do
+              corpo feminino.</p>
+            <div class="projet-bot " onclick="mostraSlide(5)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+
+        <div class="card ">
+          <img src="images/galeriass.png" class="card-img-top" alt="...">
+          <div class="card-body c ">
+            <h5 class="card-title ">Galeria</h5>
+            <p class="card-text ">Sistema de galeria que amarzena e exclui arquivos de imagens em sistema de nuvem
+              usanado firebase.</p>
+            <div class="projet-bot" onclick="mostraSlide(6)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+        <div class="card ">
+          <img src="images/IMC.png" class="card-img-top" alt="...">
+          <div class="card-body c ">
+            <h5 class="card-title ">Calculadora IMC</h5>
+            <p class="card-text ">Site que calcula seu imc e trás o resultado na hora do seu imc.</p>
+            <div class="projet-bot " onclick="mostraSlide(7)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+
+        <div class="card ">
+          <img src="images/lista.png" class="card-img-top" alt="...">
+          <div class="card-body c">
+            <h5 class="card-title ">Lista de Tarefas</h5>
+            <p class="card-text ">Sitema de lista de tarefas que adiciona e recria uma lista de tarefas diaria criada em
+              react.</p>
+            <div class="projet-bot " onclick="mostraSlide(8)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+
+        <div class="card ">
+          <img src="images/pizzas.png" class="card-img-top" alt="...">
+          <div class="card-body c ">
+            <h5 class="card-title ">Compra de Pizzas</h5>
+            <p class="card-text ">Sistema que simula uma compra de pizza em um restaurante.</p>
+            <div class="projet-bot " onclick="mostraSlide(9)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+
+        <div class="card ">
+          <img src="images/urnaele.png" class="card-img-top" alt="...">
+          <div class="card-body c">
+            <h5 class="card-title ">Urna Eletrônica</h5>
+            <p class="card-text ">Site que simula funçoes de uma urna eletrônica brasileira.</p>
+            <div class="projet-bot " onclick="mostraSlide(10)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+
+        <div class="card ">
+          <img src="images/tempocli.png" class="card-img-top" alt="...">
+          <div class="card-body c ">
+            <h5 class="card-title ">Clima e Tempo</h5>
+            <p class="card-text ">Site que ultiliza api para mostrar o clima em qualquer lugar do mundo.</p>
+            <div class="projet-bot " onclick="mostraSlide(11)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+
+        <div class="card ">
+          <img src="images/cafe.png" class="card-img-top" alt="...">
+          <div class="card-body c ">
+            <h5 class="card-title ">Clone Starbuks</h5>
+            <p class="card-text ">Clone do site starbuks totalmente responsivo em html e css apenas.</p>
+            <div class="projet-bot " onclick="mostraSlide(12)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+
+        <div class="card ">
+          <img src="images/calc.png" class="card-img-top" alt="...">
+          <div class="card-body c ">
+            <h5 class="card-title ">Project calculadora</h5>
+            <p class="card-text ">Site que desempenha as funções de uma calculadora covencional.</p>
+            <div class="projet-bot " onclick="mostraSlide(13)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/coroa.png" class="card-img-top" alt="...">
+          <div class="card-body c ">
+            <h5 class="card-title ">Site Ajax</h5>
+            <p class="card-text ">Site criado com inspiração no site ajax que vende serviços de design.</p>
+            <div class="projet-bot " onclick="mostraSlide(14)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+
+        <div class="card ">
+          <img src="images/velha.png" class="card-img-top" alt="...">
+          <div class="card-body c">
+            <h5 class="card-title ">Jogo da Velha</h5>
+            <p class="card-text ">Site que simula e desempenha o clássico jogo da velha </p>
+            <div class="projet-bot " onclick="mostraSlide(15)">
+              <img src="images/lupa (1).png" alt="">
+              Vizualizar</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-servi">
+      <div class='container-lg servi-area'>
+        <div class="espec-area-2 ">
+          <h1>Serviços</h1>
+          <div class="espec-serv">
+            <div class="area-espec-serv">
+              <img src="images/codigo.png" alt="">
+              <p>Criação de sites</p>
+            </div>
+           
+            <div class="area-espec-serv">
+              <img src="images/figam2.png" alt="">
+              <p>UI Designer</p>
+            </div>
+            
+            <div class="area-espec-serv">
+              <img src="images/celular.png" alt="">
+              <p>Sistemas Web</p>
+            </div>         
+          </div>
+
+          <div class="espec-serv-2">
+
+            <div class="area-espec-serv-2">
+              <img src="images/cod-neon.png" alt="">
+              <p>Criação de sites</p>
+            </div>
+
+            <div class="area-espec-serv-2">
+              <img src="images/figma-neon.png" alt="">
+              <p>UI Designer</p>
+            </div>
+
+            <div class="area-espec-serv-2">
+              <img src="images/celular-neon.png" alt="">
+              <p>Sistemas Web</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="section-contato " id="contato">
+      <h1>Contato</h1>
+      <div class="container-lg contato-area">
+        <div class="area-cont">
+          <img src="images/d-whatshap.png" alt="">
+          <p>(51) 98635-8851</p>
+        </div>
+        <div class="area-cont">
+          <img src="images/d-email.png" alt="">
+          <p>Adrielhahn@hotmail.com</p>
+        </div>
+        <div class="area-cont">
+          <img src="images/d-git.png" alt="">
+          <p>98109810Adriel</p>
+        </div>
+        <div class="area-cont">
+          <img src="images/d-link.png" alt="">
+          <p>Adriel Hahn</p>
+        </div>
+        <div class="area-cont-2">
+          <img src="images/whats-neon.png" alt="">
+          <p>(51) 98635-8851</p>
+        </div>
+        <div class="area-cont-2">
+          <img src="images/emial-neon.png" alt="">
+          <p>Adrielhahn@hotmail.com</p>
+        </div>
+        <div class="area-cont-2">
+          <img src="images/github-neon.png" alt="">
+          <p>98109810Adriel</p>
+        </div>
+        <div class="area-cont-2">
+          <img src="images/link-neon.png" alt="">
+          <p>Adriel Hahn</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="rodape ">@Adriel Hahn, Todos os Direitos reservados.</p>
+    </footer>
+
+
+
+
+  </main>
+
+  <div class="projeto-1" id="check-1">
+    <div class="exit" onclick="exitPro(1)"></div>
+    <div class="projeto-area ">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Financas-1.PNG" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/financas-2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/financas-3.PNG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Sistema de finanças</h1>
+      <div class="area-projeto-2">
+
+        <div class="skills">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/react.png" alt="">
+            <img src="images/ts.png" alt="">
+          </div>
+          <div class="skills-area-2">
+            <img src="images/react-neon.png" alt="">
+            <img src="images/ts-neon.png" alt="">
+          </div>
+
+        </div>
+        <div class="projeto-text ">
+          <p>Sistema de finanças que contabiliza os gastos e ganhos do mês e faz um balanço total, feito em react, se
+            quiser saber mais so clicar em ver mais.</p>
+          <a href="https://github.com/98209820Adriel/Sistema-de-Finacas" target="_blank" class="projeto-link">Ver
+            mais</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="projeto-1" id="check-2">
+    <div class="exit" onclick="exitPro(2)"></div>
+    <div class="projeto-area">
+      <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/adv-1.PNG" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/adv-2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/adv-3.PNG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Site Advocacia</h1>
+      <div class="area-projeto-2">
+
+        <div class="skills ">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/HTML (1).png" alt="">
+            <img src="images/css.png" alt="">
+          </div>
+          <div class="skills-area-2">
+            <img src="images/html-neon.png" alt="">
+            <img src="images/css-neon.png" alt="">
+          </div>
+
+        </div>
+        <div class="projeto-text">
+          <p>Site de advocacia que mostra um template de exemplo de site para tal área, se quiser saber mais só clicar
+            em ver mais.</p>
+          <a href="https://98209820adriel.github.io/Site-Advocacia/" target="_blank" class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="projeto-1" id="check-3">
+    <div class="exit" onclick="exitPro(3)"></div>
+    <div class="projeto-area">
+      <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/formu.PNG" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/formu-2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/formu-3.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/formu-4.PNG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Formulario Dev</h1>
+      <div class="area-projeto-2">
+
+        <div class="skills">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/react.png" alt="">
+            <img src="images/ts.png" alt="">
+          </div>
+          <div class="skills-area-2">
+            <img src="images/react-neon.png" alt="">
+            <img src="images/ts-neon.png" alt="">
+          </div>
+
+        </div>
+        <div class="projeto-text">
+          <p>Formulario feito em react que simula um cadastro multi etapas para contratar um dev, se quiser saber mais
+            só clicar em ver mais.</p>
+          <a href="https://github.com/98209820Adriel/formMulti" target="_blank" class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="projeto-1" id="check-4">
+    <div class="exit" onclick="exitPro(4)"></div>
+    <div class="projeto-area">
+      <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/cadasmed1.PNG" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/cadasmed2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/cadasmed3.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/cadasmed4.PNG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Cadastro Med</h1>
+      <div class="area-projeto-2">
+
+        <div class="skills">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/react.png" alt="">
+            <img src="images/ts.png" alt="">
+          </div>
+          <div class="skills-area-2">
+            <img src="images/react-neon.png" alt="">
+            <img src="images/ts-neon.png" alt="">
+          </div>
+
+        </div>
+        <div class="projeto-text ">
+          <p>Sistema que cadastra um medico para um banco de dados, se quiser saber mais só clicar em ver mais.</p>
+          <a href="https://github.com/98209820Adriel/FormularioMed" target="_blank" class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="projeto-1" id="check-5">
+    <div class="exit" onclick="exitPro(5)"></div>
+    <div class="projeto-area">
+      <div id="carouselExampleControls5" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/flor-1.PNG" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/flor-2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/flor-3.PNG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Intimate Flower</h1>
+      <div class="area-projeto-2">
+
+        <div class="skills">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/HTML (1).png" alt="">
+            <img src="images/css.png" alt="">
+            <img src="images/javascript.png" alt="">
+          </div>
+
+          <div class="skills-area-2">
+            <img src="images/html-neon.png" alt="">
+            <img src="images/css-neon.png" alt="">
+            <img src="images/js-neon.png" alt="">
+          </div>
+
+        </div>
+        <div class="projeto-text ">
+          <p>Blogue que auxilia e ajuda a entender o funcionamento, curiosidades e cuidados do corpo feminino, se quiser
+            saber mais só clicar em ver mais. </p>
+          <a href="https://98209820adriel.github.io/Intimate-Flower/" target="_blank" class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="projeto-1" id="check-6">
+    <div class="exit" onclick="exitPro(6)"></div>
+    <div class="projeto-area ">
+      <div id="carouselExampleControls6" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/galeria-1.png" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/galeria-2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/galeria-3.PNG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Galeria</h1>
+      <div class="area-projeto-2">
+
+        <div class="skills ">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/react.png" alt="">
+            <img src="images/ts.png" alt="">
+          </div>
+          <div class="skills-area">
+            <img src="images/react-neon.png" alt="">
+            <img src="images/ts-neon.png" alt="">
+          </div>
+
+        </div>
+        <div class="projeto-text">
+          <p>Sistema de galeria que amarzena e exclui arquivos de imagens em sistema de nuvem usanado firebase, se
+            quiser saber mais só clicar em ver mais.</p>
+          <a href="https://github.com/98209820Adriel/galeria" target="_blank" class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="projeto-1" id="check-7">
+    <div class="exit" onclick="exitPro(7)"></div>
+    <div class="projeto-area ">
+      <div id="carouselExampleControls7" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/imc-1.PNG" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/imc-2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/imc-3.PNG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls7"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls7"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Calculadora IMC</h1>
+      <div class="area-projeto-2">
+
+        <div class="skills ">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/react.png" alt="">
+            <img src="images/ts.png" alt="">
+          </div>
+          <div class="skills-area-2">
+            <img src="images/react-neon.png" alt="">
+            <img src="images/ts-neon.png" alt="">
+          </div>
+
+        </div>
+        <div class="projeto-text ">
+          <p>Site que calcula seu imc e trás o resultado na hora do seu imc, se quiser saber mais só clicar em ver mais.
+          </p>
+          <a href="https://github.com/98209820Adriel/react-calc-imc-main/blob/master/README.md" target="_blank"
+            class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="projeto-1" id="check-8">
+    <div class="exit" onclick="exitPro(8)"></div>
+    <div class="projeto-area ">
+      <div id="carouselExampleControls8" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/lista-1.PNG" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/lista-2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/lista-3.PNG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls8"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls8"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Lista de Tarefas</h1>
+      <div class="area-projeto-2">
+
+        <div class="skills">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/react.png" alt="">
+            <img src="images/ts.png" alt="">
+          </div>
+          <div class="skills-area-2">
+            <img src="images/react-neon.png" alt="">
+            <img src="images/ts-neon.png" alt="">
+          </div>
+
+        </div>
+        <div class="projeto-text ">
+          <p>Sitema de lista de tarefas que adiciona e recria uma lista de tarefas diaria criada em react, se quiser
+            saber mais só clicar em ver mais.</p>
+          <a href="https://github.com/98209820Adriel/Lista-de-Tarefa" target="_blank" class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
+    </div>
   </div>
 
   <div class="projeto-1" id="check-9">
     <div class="exit" onclick="exitPro(9)"></div>
     <div class="projeto-area">
-        <div id="carouselExampleControls9" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/pizza-1.PNG" class="d-block w-100 " alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/pizza-3.PNG" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/pizza-2.PNG" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls9" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden pcor">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls9" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden pcor">Next</span>
-            </button>
+      <div id="carouselExampleControls9" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/pizza-1.PNG" class="d-block w-100 " alt="...">
           </div>
-          <h1>Compra de Pizzas</h1>
-            <div class="area-projeto-2">
-                
-                <div class="skills">
-                    <h1>Tecnologias</h1>
-                    <div class="skills-area">
-                      <img src="images/HTML (1).png" alt="">
-                      <img src="images/css.png" alt="">
-                      <img src="images/javascript.png" alt="">
-                    </div>
-                
-                </div>
-                <div class="projeto-text">
-                    <p>Sistema que simula uma compra de pizza em um restaurante, se quiser saber mais só clicar em ver mais.</p>
-                    <a href="https://98209820adriel.github.io/compraPizzas/" target="_blank" class="projeto-link">Ver mais</a>
-                </div>
-          
+          <div class="carousel-item">
+            <img src="images/pizza-3.PNG" class="d-block w-100" alt="...">
           </div>
-        
+          <div class="carousel-item">
+            <img src="images/pizza-2.PNG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls9"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls9"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Compra de Pizzas</h1>
+      <div class="area-projeto-2">
+
+        <div class="skills ">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/HTML (1).png" alt="">
+            <img src="images/css.png" alt="">
+            <img src="images/javascript.png" alt="">
+          </div>
+          <div class="skills-area-2">
+            <img src="images/html-neon.png" alt="">
+            <img src="images/css-neon.png" alt="">
+            <img src="images/js-neon.png" alt="">
+          </div>
+
+        </div>
+        <div class="projeto-text ">
+          <p>Sistema que simula uma compra de pizza em um restaurante, se quiser saber mais só clicar em ver mais.</p>
+          <a href="https://98209820adriel.github.io/compraPizzas/" target="_blank" class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
     </div>
-</div>
+  </div>
 
-<div class="projeto-1" id="check-10">
-  <div class="exit" onclick="exitPro(10)"></div>
-  <div class="projeto-area">
+  <div class="projeto-1" id="check-10">
+    <div class="exit" onclick="exitPro(10)"></div>
+    <div class="projeto-area ">
       <div id="carouselExampleControls10" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/urna-1.PNG" class="d-block w-100 " alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/urna-2.PNG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/urna-3.PNG" class="d-block w-100" alt="...">
-            </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/urna-1.PNG" class="d-block w-100 " alt="...">
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls10" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden pcor">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls10" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden pcor">Next</span>
-          </button>
+          <div class="carousel-item">
+            <img src="images/urna-2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/urna-3.PNG" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <h1>Urna Eletrônica</h1>
-          <div class="area-projeto-2">
-              
-              <div class="skills">
-                  <h1>Tecnologias</h1>
-                  <div class="skills-area">
-                    <img src="images/HTML (1).png" alt="">
-                    <img src="images/css.png" alt="">
-                    <img src="images/javascript.png" alt="">
-                  </div>
-              
-              </div>
-              <div class="projeto-text">
-                  <p>Site que simula funçoes de uma urna eletrônica brasileira, se quiser saber mais só clicar em ver mais.</p>
-                  <a href="https://98209820adriel.github.io/Urna/" target="_blank" class="projeto-link">Ver mais</a>
-              </div>
-        
-        </div>
-      
-  </div>
-</div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls10"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls10"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Urna Eletrônica</h1>
+      <div class="area-projeto-2">
 
-<div class="projeto-1" id="check-11">
-  <div class="exit" onclick="exitPro(11)"></div>
-  <div class="projeto-area">
+        <div class="skills ">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/HTML (1).png" alt="">
+            <img src="images/css.png" alt="">
+            <img src="images/javascript.png" alt="">
+          </div>
+          <div class="skills-area-2">
+            <img src="images/html-neon.png" alt="">
+            <img src="images/css-neon.png" alt="">
+            <img src="images/js-neon.png" alt="">
+          </div>
+
+        </div>
+        <div class="projeto-text ">
+          <p>Site que simula funçoes de uma urna eletrônica brasileira, se quiser saber mais só clicar em ver mais.</p>
+          <a href="https://98209820adriel.github.io/Urna/" target="_blank" class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="projeto-1" id="check-11">
+    <div class="exit" onclick="exitPro(11)"></div>
+    <div class="projeto-area">
       <div id="carouselExampleControls11" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/clima-1.PNG" class="d-block w-100 " alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/clima-2.PNG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/clima-3.PNG" class="d-block w-100" alt="...">
-            </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/clima-1.PNG" class="d-block w-100 " alt="...">
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls11" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden pcor">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls11" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden pcor">Next</span>
-          </button>
+          <div class="carousel-item">
+            <img src="images/clima-2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/clima-3.PNG" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <h1>Clima e Tempo</h1>
-          <div class="area-projeto-2">
-              
-              <div class="skills">
-                  <h1>Tecnologias</h1>
-                  <div class="skills-area">
-                    <img src="images/HTML (1).png" alt="">
-                    <img src="images/css.png" alt="">
-                    <img src="images/javascript.png" alt="">
-                  </div>
-              
-              </div>
-              <div class="projeto-text">
-                  <p>Site que ultiliza api para mostrar o clima em qualquer lugar do mundo, se quiser saber mais só clicar em ver mais.</p>
-                  <a href="https://98209820adriel.github.io/Site-Clima/"  target="_blank" class="projeto-link">Ver mais</a>
-              </div>
-        
-        </div>
-      
-  </div>
-</div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls11"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls11"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Clima e Tempo</h1>
+      <div class="area-projeto-2">
 
-<div class="projeto-1" id="check-12">
-  <div class="exit" onclick="exitPro(12)"></div>
-  <div class="projeto-area">
+        <div class="skills ">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/HTML (1).png" alt="">
+            <img src="images/css.png" alt="">
+            <img src="images/javascript.png" alt="">
+          </div>
+          <div class="skills-area-2">
+            <img src="images/html-neon.png" alt="">
+            <img src="images/css-neon.png" alt="">
+            <img src="images/js-neon.png" alt="">
+          </div>
+
+        </div>
+        <div class="projeto-text ">
+          <p>Site que ultiliza api para mostrar o clima em qualquer lugar do mundo, se quiser saber mais só clicar em
+            ver mais.</p>
+          <a href="https://98209820adriel.github.io/Site-Clima/" target="_blank" class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="projeto-1" id="check-12">
+    <div class="exit" onclick="exitPro(12)"></div>
+    <div class="projeto-area ">
       <div id="carouselExampleControls12" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/star-1.PNG" class="d-block w-100 " alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/star-2.PNG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/star-3.PNG" class="d-block w-100" alt="...">
-            </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/star-1.PNG" class="d-block w-100 " alt="...">
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls12" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden pcor">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls12" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden pcor">Next</span>
-          </button>
+          <div class="carousel-item">
+            <img src="images/star-2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/star-3.PNG" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <h1>Clone Starbuks</h1>
-          <div class="area-projeto-2">
-              
-              <div class="skills">
-                  <h1>Tecnologias</h1>
-                  <div class="skills-area">
-                    <img src="images/HTML (1).png" alt="">
-                    <img src="images/css.png" alt="">
-                    <img src="images/javascript.png" alt="">
-                  </div>
-              
-              </div>
-              <div class="projeto-text">
-                  <p>Clone do site starbuks totalmente responsivo em html e css apenas, se quiser saber mais só clicar em ver mais.</p>
-                  <a href="https://98209820adriel.github.io/site-starbucks/" target="_blank" class="projeto-link">Ver mais</a>
-              </div>
-        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls12"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls12"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Clone Starbuks</h1>
+      <div class="area-projeto-2">
+
+        <div class="skills">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/HTML (1).png" alt="">
+            <img src="images/css-neon.png" alt="">
+            <img src="images/javascript.png" alt="">
+          </div>
+          <div class="skills-area-2">
+            <img src="images/html-neon.png" alt="">
+            <img src="images/css-neon.png" alt="">
+            <img src="images/js-neon.png" alt="">
+          </div>
+
         </div>
-      
+        <div class="projeto-text ">
+          <p>Clone do site starbuks totalmente responsivo em html e css apenas, se quiser saber mais só clicar em ver
+            mais.</p>
+          <a href="https://98209820adriel.github.io/site-starbucks/" target="_blank" class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
+    </div>
   </div>
-</div>
-<div class="projeto-1" id="check-13">
-  <div class="exit" onclick="exitPro(13)"></div>
-  <div class="projeto-area">
+  <div class="projeto-1" id="check-13">
+    <div class="exit" onclick="exitPro(13)"></div>
+    <div class="projeto-area ">
       <div id="carouselExampleControls13" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/cal-1.PNG" class="d-block w-100 " alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/cal-2.PNG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/cal-3.PNG" class="d-block w-100" alt="...">
-            </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/cal-1.PNG" class="d-block w-100 " alt="...">
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls13" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden pcor">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls13" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden pcor">Next</span>
-          </button>
+          <div class="carousel-item">
+            <img src="images/cal-2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/cal-3.PNG" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <h1>Project calculadora</h1>
-          <div class="area-projeto-2">
-              
-              <div class="skills">
-                  <h1>Tecnologias</h1>
-                  <div class="skills-area">
-                    <img src="images/HTML (1).png" alt="">
-                    <img src="images/css.png" alt="">
-                    <img src="images/javascript.png" alt="">
-                  </div>
-              
-              </div>
-              <div class="projeto-text">
-                  <p>Site que desempenha as funções de uma calculadora covencional, se quiser saber mais só clicar em ver mais.</p>
-                  <a href="https://98209820adriel.github.io/Calculadora/" target="_blank" class="projeto-link">Ver mais</a>
-              </div>
-        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls13"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls13"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Project calculadora</h1>
+      <div class="area-projeto-2">
+
+        <div class="skills ">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/HTML (1).png" alt="">
+            <img src="images/css.png" alt="">
+            <img src="images/javascript.png" alt="">
+          </div>
+          <div class="skills-area-2">
+            <img src="images/html-neon.png" alt="">
+            <img src="images/css-neon.png" alt="">
+            <img src="images/js-neon.png" alt="">
+          </div>
+
         </div>
-      
+        <div class="projeto-text ">
+          <p>Site que desempenha as funções de uma calculadora covencional, se quiser saber mais só clicar em ver mais.
+          </p>
+          <a href="https://98209820adriel.github.io/Calculadora/" target="_blank" class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
+    </div>
   </div>
-</div>
-<div class="projeto-1" id="check-14">
-  <div class="exit" onclick="exitPro(14)"></div>
-  <div class="projeto-area">
+  <div class="projeto-1" id="check-14">
+    <div class="exit" onclick="exitPro(14)"></div>
+    <div class="projeto-area ">
       <div id="carouselExampleControls14" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/ajax-1.PNG" class="d-block w-100 " alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/ajax-2.PNG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/ajax-3.PNG" class="d-block w-100" alt="...">
-            </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/ajax-1.PNG" class="d-block w-100 " alt="...">
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls14" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden pcor">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls14" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden pcor">Next</span>
-          </button>
+          <div class="carousel-item">
+            <img src="images/ajax-2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/ajax-3.PNG" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <h1>Site Ajax</h1>
-          <div class="area-projeto-2">
-              
-              <div class="skills">
-                  <h1>Tecnologias</h1>
-                  <div class="skills-area">
-                    <img src="images/HTML (1).png" alt="">
-                    <img src="images/css.png" alt="">
-                    <img src="images/javascript.png" alt="">
-                  </div>
-              
-              </div>
-              <div class="projeto-text">
-                  <p>Site criado com inspiração no site ajax que vende serviços de design, se quiser saber mais só clicar em ver mais.</p>
-                  <a href="https://98209820adriel.github.io/projeto-ajax/" target="_blank"  class="projeto-link">Ver mais</a>
-              </div>
-        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls14"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls14"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Site Ajax</h1>
+      <div class="area-projeto-2">
+
+        <div class="skills ">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/HTML (1).png" alt="">
+            <img src="images/css.png" alt="">
+            <img src="images/javascript.png" alt="">
+          </div>
+          <div class="skills-area-2">
+            <img src="images/html-neon.png" alt="">
+            <img src="images/css-neon.png" alt="">
+            <img src="images/js-neon.png" alt="">
+          </div>
+
         </div>
-      
+        <div class="projeto-text ">
+          <p>Site criado com inspiração no site ajax que vende serviços de design, se quiser saber mais só clicar em ver
+            mais.</p>
+          <a href="https://98209820adriel.github.io/projeto-ajax/" target="_blank" class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
+    </div>
   </div>
-</div>
-<div class="projeto-1" id="check-15">
-  <div class="exit" onclick="exitPro(15)"></div>
-  <div class="projeto-area">
+  <div class="projeto-1" id="check-15">
+    <div class="exit" onclick="exitPro(15)"></div>
+    <div class="projeto-area ">
       <div id="carouselExampleControls15" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/jv-1.PNG" class="d-block w-100 " alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/jv-2.PNG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/jv-3.PNG" class="d-block w-100" alt="...">
-            </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/jv-1.PNG" class="d-block w-100 " alt="...">
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls15" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden pcor">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls15" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden pcor">Next</span>
-          </button>
+          <div class="carousel-item">
+            <img src="images/jv-2.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/jv-3.PNG" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <h1>Jogo da Velha</h1>
-          <div class="area-projeto-2">
-              
-              <div class="skills">
-                  <h1>Tecnologias</h1>
-                  <div class="skills-area">
-                    <img src="images/HTML (1).png" alt="">
-                    <img src="images/css.png" alt="">
-                    <img src="images/javascript.png" alt="">
-                  </div>
-              
-              </div>
-              <div class="projeto-text">
-                  <p>Site que simula e desempenha o clássico jogo da velha, se quiser saber mais só clicar em ver mais.</p>
-                  <a href="https://98209820adriel.github.io/Jogo-da-Velha/"  target="_blank" class="projeto-link">Ver mais</a>
-              </div>
-        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls15"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls15"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden pcor">Next</span>
+        </button>
+      </div>
+      <h1>Jogo da Velha</h1>
+      <div class="area-projeto-2">
+
+        <div class="skills">
+          <h1>Tecnologias</h1>
+          <div class="skills-area">
+            <img src="images/HTML (1).png" alt="">
+            <img src="images/css.png" alt="">
+            <img src="images/javascript.png" alt="">
+          </div>
+          <div class="skills-area-2">
+            <img src="images/html-neon.png" alt="">
+            <img src="images/css-neon.png" alt="">
+            <img src="images/js-neon.png" alt="">
+          </div>
+
         </div>
-      
+        <div class="projeto-text ">
+          <p>Site que simula e desempenha o clássico jogo da velha, se quiser saber mais só clicar em ver mais.</p>
+          <a href="https://98209820adriel.github.io/Jogo-da-Velha/" target="_blank" class="projeto-link">Ver mais</a>
+        </div>
+
+      </div>
+
+    </div>
   </div>
-</div>
 
 
 
@@ -1097,7 +1309,10 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>
